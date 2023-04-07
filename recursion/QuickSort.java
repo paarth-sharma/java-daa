@@ -26,14 +26,8 @@ public class QuickSort {
         swap(arr, i + 1, high);
         return (i + 1);
     }
-  
-    /* The main function that implements QuickSort
-            arr[] --> Array to be sorted,
-            low --> Starting index,
-            high --> Ending index
-     */
-    static void quickSort(int[] arr, int low, int high)
-    {
+
+    static void quickSort(int[] arr, int low, int high){
         if (low < high) {
   
             // pi is partitioning index, arr[p] is now at right place
