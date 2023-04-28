@@ -57,7 +57,11 @@ public class NQueens {
     }
 
     public static void main(String[] args) {
-        NQueens problem = new NQueens(8);
+        Scanner key = new Scanner(System.in);
+        System.out.print("Enter the number of queens: ");
+        int n = key.nextInt();
+        NQueens problem = new NQueens(n);
         problem.solve();
+        key.close();
     }
 }
