@@ -1,4 +1,3 @@
-import java.util.*;
 public class GraphColoring {
 
     static int V = 4; // number of vertices
@@ -43,7 +42,6 @@ public class GraphColoring {
         return true;
     }
     public static void main(String[] args) {
-        Scanner key = new Scanner(System.in);
         boolean graph[][] = {
             { false, true, true, true },
             { true, false, true, false },
@@ -61,7 +59,5 @@ public class GraphColoring {
         // Function call
         if (!graphColor(graph, m, 0, color))
             System.out.println("Solution does not exist");
-
-        key.close();
     }
 }
